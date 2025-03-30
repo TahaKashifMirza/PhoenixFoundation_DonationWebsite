@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(135deg, #64b7e4, #24e05d);
+    color: #333;
+  }
+  
+  .faq {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .faq-main-heading {
+    font-family: "Anton";
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-slogan {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .faq-h3 {
+    font-size: 1.8rem;
+    color: #ff5733;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-paragraph {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 1024px) {
+    .faq-content {
+      padding: 1rem;
+    }
+  
+    .faq-h2 {
+      font-size: 2.5rem;
+    }
+  
+    .faq-h3 {
+      font-size: 1.5rem;
+    }
+  
+    .faq-paragraph {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .faq-main-heading {
+      font-size: 4rem;
+    }
+  
+    .faq-slogan {
+      font-size: 1.3rem;
+    }
+  
+    .faq-h2 {
+      font-size: 2rem;
+    }
+  
+    .faq-h3 {
+      font-size: 1.5rem;
+    }
+  
+    .faq-paragraph {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Button styles */
+  .faq-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .faq-button {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .faq-button:hover {
+    background-color: #333;
+    color: yellow;
+  }
+  

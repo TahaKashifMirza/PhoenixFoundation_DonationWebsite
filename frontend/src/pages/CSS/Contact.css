@@ -1,0 +1,154 @@
+.contact-page {
+    background-image: url('/Images/contact.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .contacth1 {
+    font-family: "Anton";
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+ .contacth2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+  }
+
+  .contact-h3{
+    color: wheat;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form label {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .contact-form button {
+    padding: 15px 20px;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: yellow;
+    color: #333;
+  }
+  
+  .contact-social-section {
+    text-align: center;
+  }
+  
+  .contact-social-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .contact-social-links a {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid #ccc;
+    opacity: 0.75;
+    font-size: 3rem;
+  }
+  
+  .contact-social-links a:hover {
+    color: yellow;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .contact-page {
+      padding: 40px;
+    }
+  
+    .contacth1 {
+      font-size: 2rem;
+    }
+  
+    .contacth2 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  
+    .contact-form label {
+      font-size: 0.9rem;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .contact-form button {
+      font-size: 0.9rem;
+    }
+  
+    .contact-social-links a {
+      font-size: 1.5rem;
+    }
+  }
+  

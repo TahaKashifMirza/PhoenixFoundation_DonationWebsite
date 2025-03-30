@@ -1,0 +1,82 @@
+.join-container {
+    background-color: rgb(10, 56, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text alignment for smaller screens */
+    padding: 20px;
+  }
+  
+  .join-heading {
+    font-family: "Anton";
+    margin-top: 20px;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Initial position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+  }
+  
+  .join-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically by default */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .join-text {
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 0 20px; /* Add padding for spacing */
+    flex: none; /* Remove flex property for better control */
+    opacity: 0; /* Start hidden */
+    transform: translateX(-20px); /* Initial position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+  }
+  
+  .join-image-container {
+    margin-top: 2rem; /* Add margin for spacing */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure image container takes full width */
+    opacity: 0; /* Start hidden */
+    transform: translateX(20px); /* Initial position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+  }
+  
+  .join-image {
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    .join-content {
+      flex-direction: row; /* Row layout for larger screens */
+      text-align: left; /* Left-align text for larger screens */
+    }
+  
+    .join-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+  
+    .join-image-container {
+      flex: 1;
+      margin-top: 0; /* Remove top margin for larger screens */
+      margin-left: 50px;
+    }
+  }
+  
+  .join-container.visible .join-heading,
+  .join-container.visible .join-text,
+  .join-container.visible .join-image-container {
+    opacity: 1;
+    transform: translateX(0); /* Reset to initial position */
+  }
+  

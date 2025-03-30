@@ -1,0 +1,126 @@
+.homeimg {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make sure it takes full height of the viewport */
+  overflow: hidden;
+}
+
+.homeimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imgcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.imgheading {
+  font-family: "Anton";
+  font-size: 7em;
+  margin-bottom: 30px;
+}
+
+.mainimgparagraph {
+  font-family: "Anton";
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.homebtn {
+  font-family: "Anton";
+  padding: 10px 20px;
+  font-size: 3em;
+  text-align: center;
+  background-color: #333;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.homebtn:hover {
+  background-color: yellow;
+  color: #333;
+}
+
+.save-heading {
+  font-family: "Titillium Web";
+  font-size: 3em;
+  color: wheat;
+  margin-bottom: 15px;
+  animation: fadeInOut 5s ease infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* For responsiveness */
+@media screen and (max-width: 768px) {
+  .imgheading {
+    font-size: 5em;
+  }
+
+  .imgparagraph {
+    font-size: 2.5em;
+  }
+
+  .homebtn {
+    font-size: 2.5em;
+  }
+
+  .save-heading {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imgheading {
+    font-size: 4em;
+  }
+
+  .imgparagraph {
+    font-size: 2em;
+  }
+
+  .homebtn {
+    font-size: 2em;
+  }
+
+  .save-heading {
+    font-size: 2em;
+  }
+}
